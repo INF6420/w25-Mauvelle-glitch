@@ -1,0 +1,164 @@
+body {
+    background: floralwhite;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 5px;
+    margin: 5px;
+}
+
+* body {
+    background-color: floralwhite;
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+}
+
+a {
+    color: indigo
+}
+
+img {
+    max-width: 50%;
+}
+
+address {
+    font-style: normal;
+}
+
+* header {
+    margin: 1rem 1rem 0 1rem;
+    padding: 0.5rem 1rem;
+    background-color: mediumpurple;
+}
+
+
+main {
+    padding: 1rem 1rem 2rem;
+}
+
+footer {
+    padding: 1rem;
+    background-color: mediumpurple;
+    color: floralwhite;
+}
+
+nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.main-menu {
+    position: relative;
+}
+
+.menu-btn {
+    display: none;
+}
+
+.menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+
+.menu-icon .navicon {
+    background: rgb(120, 92, 177);
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background 0.2s ease-out;
+    width: 18px;
+}
+
+@media screen and (min-width: 760px) {
+    header,
+    footer {
+        clear: both;
+    }
+    
+    main {
+        padding-top: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .main-menu {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    .site-name {
+        flex: 1 0 auto;
+    }
+
+    .main-nav {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        opacity: 1;
+    }
+
+}
+
+.featured-text-container hi {
+    margin: 0.5rem 1rem;
+    font-size: 1.4rem;   
+}
+
+.featured-text-container p {
+    font-family: "Playfair Display", serif;
+    font-size: 1.2rem;
+    margin: 0.5rem 0 1.5rem;
+}
+
+.button-outline {
+    border: 2px solid indigo;
+    border-radius: 4px;
+    padding: 0.6rem;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+}
+
+footer {
+    justify-content: flex-end;
+    padding: 3rem;
+}
+
+.footer-container {
+    text-align: right;
+}
+
+@media screen and (max-width: 1065px) {
+    .footer-container {
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .featured-image-container ::before {
+        position: absolute;
+        top: 100%;
+        left: -150%;
+        width: 100%;
+        height: 100%;
+        border: 4px solid indigo;
+        content: "";
+        z-index: -1;
+        opacity: 0.2;
+    }
+    
+}
