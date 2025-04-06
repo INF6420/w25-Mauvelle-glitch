@@ -20,7 +20,7 @@ a {
 }
 
 img {
-    max-width: 50%;
+    max-width: 100%
 }
 
 address {
@@ -49,6 +49,10 @@ nav a {
     text-decoration: none;
 }
 
+.site-name img {
+    max-width: 100px;
+}
+
 .main-menu {
     position: relative;
 }
@@ -72,6 +76,24 @@ nav a {
     position: relative;
     transition: background 0.2s ease-out;
     width: 18px;
+}
+
+.main-nav {
+    display: none;
+}
+
+.menu-btn:checked ~ .main-nav {
+    display: block;
+}
+
+.main-nav li {
+    background: rgb(120, 92, 177);
+    padding: 1rem;
+    border: 3px solid indigo;
+    display: flex;
+        align-content: center;
+        justify-content: center;
+   
 }
 
 @media screen and (min-width: 760px) {
