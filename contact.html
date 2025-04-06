@@ -23,10 +23,21 @@
     <main>
         <div>
             <hi>Contact Me</hi>
-            <p>Email me through this website.</p>
-            <a href="">Learn More</a>
+            <p>Email me with any questions or feedback this study has raised.</p>
         </div>
-        <div class="featured-image-container"> <img src="images/portrait.jpg" alt="Jackie Mow image" /></div>
+            <form action="https://formspree.io/f/mjkypgae" method="post">
+                <label for="name">Name</label>
+                <input id="name" type="text" name="name" class="form-input">
+
+                <label for="email">Email</label>
+                <input name="_replyto" id="email" type="email" class="form-input">
+
+                <label for ="message">Message</label>
+                <textarea id="message" name="message" class="form-input" rows="4"></textarea>
+
+                <input type="submit" value="Send">
+              </form>
+        </div>
     </main>
     <footer>
         Copyright &copy; 2025 Jackie Mow
