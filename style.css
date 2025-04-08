@@ -20,7 +20,7 @@ a {
 }
 
 img {
-    max-width: 50%;
+    max-width: 100%
 }
 
 address {
@@ -49,6 +49,10 @@ nav a {
     text-decoration: none;
 }
 
+.site-name img {
+    max-width: 100px;
+}
+
 .main-menu {
     position: relative;
 }
@@ -74,12 +78,83 @@ nav a {
     width: 18px;
 }
 
+.main-nav {
+    display: none;
+}
+
+.menu-btn:checked ~ .main-nav {
+    display: block;
+}
+
+.main-nav li {
+    background: rgb(120, 92, 177);
+    padding: 1rem;
+    border: 3px solid indigo;
+    display: flex;
+        align-content: center;
+        justify-content: center;
+}
+
+label {
+    display: block;
+    font-weight: 700;
+}
+
+.form-input {
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 1em;
+    margin-bottom: 1.5em;
+    width: 100%;
+}
+
+.form-input:focus {
+    outline: none;
+    border: 2px solid indigo;
+}
+
+[type="submit"] {
+    background: mediumpurple;
+    color: floralwhite;
+    width: 100%;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    border: 0;
+    padding: .5em;
+    cursor: pointer;
+}
+
+[type="submit"]:hover,
+[type="submit"]:focus{
+    background: indigo;
+
+}
+
+textarea {
+    height: 150px;
+    resize:vertical;
+
+}
+
+
 @media screen and (min-width: 760px) {
+    form {
+        width: 50%;
+        margin: 3em auto;
+    }
     header,
     footer {
         clear: both;
     }
-    
+    .foster-column {
+        max-width: 300pc;
+    }
+}
+ @media screen and (min-width: 760px) {
     main {
         padding-top: 2rem;
         display: flex;
