@@ -16,7 +16,11 @@ body {
 }
 
 a {
-    color: indigo
+    color: indigo;
+    text-align: center;
+    display: flex;
+    align-items: center; /* Vertically centers the text */
+    justify-content: center; /* Horizontally centers the text */
 }
 
 img {
@@ -32,7 +36,36 @@ address {
     padding: 0.5rem 1rem;
     background-color: mediumpurple;
 }
+.h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+.logo {
+    max-width: 5em;
+    max-height: 5em;
+    float: left;
+    /* how to get logo to stay left all the way*/
+}
 
+.portrait {
+    max-width: 500%;
+    max-height: 500%;
+    border-radius: 5%;
+}
+
+.GDL {
+    max-width: 500%;
+    max-height: 500%;
+    border-radius: 5%;
+}
+
+.LDL {
+    max-width: 1000%;
+    max-height: 1000%;
+    border-radius: 5%;
+    /*how to get the photo up more to stay up top?*/
+}
 
 main {
     padding: 1rem 1rem 2rem;
@@ -41,7 +74,12 @@ main {
 footer {
     padding: 1rem;
     background-color: mediumpurple;
-    color: floralwhite;
+    color: indigo;
+    
+}
+
+.footer-container {
+    text-align: right;
 }
 
 nav a {
@@ -70,7 +108,7 @@ nav a {
 }
 
 .menu-icon .navicon {
-    background: rgb(120, 92, 177);
+    background: indigo;
     display: block;
     height: 2px;
     position: relative;
@@ -87,7 +125,7 @@ nav a {
 }
 
 .main-nav li {
-    background: rgb(120, 92, 177);
+    background: rgb(150, 119, 211);
     padding: 1rem;
     border: 3px solid indigo;
     display: flex;
