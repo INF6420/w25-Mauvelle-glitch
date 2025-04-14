@@ -4,8 +4,8 @@ body {
 
 * {
     box-sizing: border-box;
-    padding: 5px;
-    margin: 5px;
+    padding: 0;
+    margin: 0;
 }
 
 * body {
@@ -49,20 +49,20 @@ address {
 }
 
 .portrait {
-    max-width: 500%;
-    max-height: 500%;
+    max-width: 100%;
+    max-height: 100%;
     border-radius: 5%;
 }
 
 .GDL {
-    max-width: 500%;
-    max-height: 500%;
+    max-width: 100%;
+    max-height:100%;
     border-radius: 5%;
 }
 
 .LDL {
-    max-width: 1000%;
-    max-height: 1000%;
+    max-width: 100%;
+    max-height: 100%;
     border-radius: 5%;
     /*how to get the photo up more to stay up top?*/
 }
@@ -74,7 +74,7 @@ main {
 footer {
     padding: 1rem;
     background-color: mediumpurple;
-    color: indigo;
+    color: #2a0447;
     
 }
 
@@ -178,6 +178,15 @@ textarea {
 
 }
 
+main > .featured-text-container p {
+   /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    margin: 0 0 1.5rem;
+
+}
+
 
 @media screen and (min-width: 760px) {
     form {
@@ -196,10 +205,17 @@ textarea {
     main {
         padding-top: 2rem;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
         max-width: 1200px;
         margin: auto;
+        gap: 1rem;
+    }
+
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .main-menu {
@@ -213,6 +229,7 @@ textarea {
 
     .site-name {
         flex: 1 0 auto;
+        max-width: 100px;
     }
 
     .main-nav {
@@ -221,6 +238,10 @@ textarea {
         flex-wrap: wrap;
         justify-content: flex-end;
         opacity: 1;
+    }
+
+    main > .featured-text-container {
+        max-width: 70%;;
     }
 
 }
