@@ -4,8 +4,8 @@ body {
 
 * {
     box-sizing: border-box;
-    padding: 5px;
-    margin: 5px;
+    padding: 0;
+    margin: 0;
 }
 
 * body {
@@ -16,7 +16,11 @@ body {
 }
 
 a {
-    color: indigo
+    color: indigo;
+    text-align: center;
+    display: flex;
+    align-items: center; /* Vertically centers the text */
+    justify-content: center; /* Horizontally centers the text */
 }
 
 img {
@@ -32,7 +36,36 @@ address {
     padding: 0.5rem 1rem;
     background-color: mediumpurple;
 }
+.h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+.logo {
+    max-width: 5em;
+    max-height: 5em;
+    float: left;
+    /* how to get logo to stay left all the way*/
+}
 
+.portrait {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5%;
+}
+
+.GDL {
+    max-width: 100%;
+    max-height:100%;
+    border-radius: 5%;
+}
+
+.LDL {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5%;
+    /*how to get the photo up more to stay up top?*/
+}
 
 main {
     padding: 1rem 1rem 2rem;
@@ -41,7 +74,12 @@ main {
 footer {
     padding: 1rem;
     background-color: mediumpurple;
-    color: floralwhite;
+    color: #2a0447;
+    
+}
+
+.footer-container {
+    text-align: right;
 }
 
 nav a {
@@ -70,7 +108,7 @@ nav a {
 }
 
 .menu-icon .navicon {
-    background: rgb(120, 92, 177);
+    background: indigo;
     display: block;
     height: 2px;
     position: relative;
@@ -87,7 +125,7 @@ nav a {
 }
 
 .main-nav li {
-    background: rgb(120, 92, 177);
+    background: rgb(150, 119, 211);
     padding: 1rem;
     border: 3px solid indigo;
     display: flex;
@@ -140,6 +178,15 @@ textarea {
 
 }
 
+main > .featured-text-container p {
+   /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    margin: 0 0 1.5rem;
+
+}
+
 
 @media screen and (min-width: 760px) {
     form {
@@ -158,10 +205,17 @@ textarea {
     main {
         padding-top: 2rem;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
         max-width: 1200px;
         margin: auto;
+        gap: 1rem;
+    }
+
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .main-menu {
@@ -175,6 +229,7 @@ textarea {
 
     .site-name {
         flex: 1 0 auto;
+        max-width: 100px;
     }
 
     .main-nav {
@@ -183,6 +238,10 @@ textarea {
         flex-wrap: wrap;
         justify-content: flex-end;
         opacity: 1;
+    }
+
+    main > .featured-text-container {
+        max-width: 70%;;
     }
 
 }
